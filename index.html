@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Osborne Lopes — Data Engineer & Business Intelligence Analyst. Building real-time analytics, ML, and data products." />
+  <title>Osborne Lopes | Data Engineer & BI Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">OL<span>.</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn--ghost nav__cta">Get in touch</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">Hi, my name is</p>
+      <h1 class="hero__name">Osborne Lopes<span class="accent">.</span></h1>
+      <h2 class="hero__role">I build <span class="typed" id="typed"></span></h2>
+      <p class="hero__desc">
+        Data Engineer & Business Intelligence Analyst focused on turning messy,
+        real-time data into decision-ready dashboards and ML products, sentiment
+        engines, fraud detection, churn prediction, and interactive analytics.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="mailto:lopes.o@northeastern.edu" class="btn btn--ghost">Say hello</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/OzSpidey" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="mailto:lopes.o@northeastern.edu" aria-label="Email">Email</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <main>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01.</span> About me</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              I'm a data engineer and BI analyst who enjoys living where the data
+              pipeline meets the dashboard. I like taking a noisy, real-time feed,
+              market RSS, Reddit threads, clinical-trial registries, transaction
+              streams, and turning it into something a person can actually read and act on.
+            </p>
+            <p>
+              My work spans the full stack of analytics: ingesting and cleaning data,
+              building ML models with explainability baked in, and shipping interactive
+              apps people want to explore. I care a lot about <strong>real-time</strong>,
+              <strong>explainable</strong>, and <strong>genuinely usable</strong> data products.
+            </p>
+            <p>Here are a few technologies I work with day to day:</p>
+            <ul class="about__list">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Plotly Dash</li>
+              <li>Pandas</li>
+              <li>XGBoost</li>
+              <li>SHAP</li>
+              <li>NLP / VADER</li>
+              <li>ETL pipelines</li>
+            </ul>
+          </div>
+          <div class="about__card">
+            <div class="about__avatar">OL</div>
+            <p class="about__loc">Boston, MA · Northeastern University</p>
+            <ul class="about__stats">
+              <li><strong>5+</strong><span>data products</span></li>
+              <li><strong>1.5k+</strong><span>trials tracked</span></li>
+              <li><strong>0.824</strong><span>model AUC</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02.</span> Things I've built</h2>
+        <div class="projects" id="projectGrid"><!-- injected by script.js --></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03.</span> Skills & tooling</h2>
+        <div class="skills" id="skillGrid"><!-- injected by script.js --></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact">
+        <p class="section__num">04. What's next?</p>
+        <h2 class="contact__title">Get in touch</h2>
+        <p class="contact__desc">
+          I'm always happy to talk data, dashboards, or a new opportunity.
+          My inbox is open, drop me a line and I'll get back to you.
+        </p>
+        <a href="mailto:lopes.o@northeastern.edu" class="btn btn--primary btn--lg">Say hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed & built by Osborne Lopes</p>
+      <div class="footer__socials">
+        <a href="https://github.com/OzSpidey" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:lopes.o@northeastern.edu">Email</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
